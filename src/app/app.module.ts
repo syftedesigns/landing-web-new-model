@@ -7,6 +7,7 @@ import { PublicComponent } from './components/public/public.component';
 import { StaticModule } from './components/static/static.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AngularMaterialModule } from './angular-material.module';
     APP_ROUTES,
     StaticModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

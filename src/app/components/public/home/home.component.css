@@ -1,0 +1,17 @@
+.theme-bg {
+    background: url(../../../../assets/images/consultoria-digital.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.marketer-theme {
+    background: url(../../../../assets/images/expert-marketer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.check-ui-color {
+    color: #1238bf !important;
+    font-size: 2.325rem !important;
+    margin-top: -1%
+}

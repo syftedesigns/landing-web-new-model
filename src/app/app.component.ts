@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
+  constructor(private Render: Renderer2) {
+    this.Render.addClass(document.body, 'page--enterprise-ecommerce');
+  }
 }
+

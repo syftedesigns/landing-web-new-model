@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-counts',
   templateUrl: './counts.component.html',
-  styles: []
+  styleUrls: ['./counts.component.css']
 })
 export class CountsComponent implements OnInit {
 
