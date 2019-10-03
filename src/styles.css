@@ -6977,10 +6977,6 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.w-100 {
-    width: 100%;
-}
-
 
 /*
 Bootstrap margin
@@ -7184,4 +7180,20 @@ Bootstrap margin
     .offset-xl-11 {
         margin-left: 91.666667%
     }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
 }
