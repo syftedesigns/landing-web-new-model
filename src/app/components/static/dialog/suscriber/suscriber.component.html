@@ -23,12 +23,12 @@
                         </div>
 
                         <div class="content-block content-block--theme-white content-block--size-md">
-                            <h1 class="content-block__heading heading--1">¿Estás listo para potenciar tu negocio con nosotros?</h1>
+                            <h1 class="content-block__heading heading--1">¿Estás listo para crear tu página web con nosotros?</h1>
                         </div>
                     </div>
                     <div class="grid">
-                        <div class="grid__item grid__item--mobile-up-12 grid__item--mobile-up-offset-1 grid__item--tablet-up-5">
-                            <form ngNativeValidate #mailchimp="ngForm" (ngSubmit)="SendForm(mailchimp);" class="plus-form" id="new_forms_signup">
+                        <div style="background-color: transparent !important" class="grid__item grid__item--mobile-up-12 grid__item--mobile-up-offset-1 grid__item--tablet-up-5">
+                            <form style="background-color: transparent !important" ngNativeValidate #mailchimp="ngForm" (ngSubmit)="SendForm(mailchimp);" class="plus-form" id="new_forms_signup">
                                 <div class="form-group">
                                     <mat-form-field class="w-100">
                                         <input placeholder="Nombre y Apellido" type="text" matInput appearance="fill" ngModel name="name" required>
@@ -39,7 +39,7 @@
                                         <input placeholder="Correo electrónico" type="email" matInput appearance="fill" ngModel name="email" required>
                                     </mat-form-field>
                                 </div>
-                                <button [disabled]="isLoading && mailchimp.invalid" class="button button--theme-chartreuse button--size-md" type="submit">Suscribirme</button>
+                                <button mat-raised-button [disabled]="isLoading && mailchimp.invalid" class="button button--size-md btn-grad" type="submit">Suscribirme</button>
 
                             </form>
 

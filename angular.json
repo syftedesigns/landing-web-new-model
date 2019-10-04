@@ -25,10 +25,13 @@
                         ],
                         "styles": [
                             "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-                            "src/styles.css"
+                            "src/styles.css",
+                            "src/assets/css/theme.min.css",
+                            "./node_modules/animate.css/animate.css"
                         ],
                         "scripts": [
-                            "./node_modules/jquery/dist/jquery.min.js"
+                            "./node_modules/jquery/dist/jquery.min.js",
+                            "./node_modules/wowjs/dist/wow.js"
                         ]
                     },
                     "configurations": {

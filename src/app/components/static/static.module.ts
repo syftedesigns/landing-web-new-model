@@ -6,6 +6,8 @@ import { ThankPageComponent } from './dialog/thank-page/thank-page.component';
 import { AngularMaterialModule } from '../../angular-material.module';
 import { FooterComponent } from './footer/footer.component';
 import { CountsComponent } from './counts/counts.component';
+import { PricesComponent } from './prices/prices.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { CountsComponent } from './counts/counts.component';
     SuscriberComponent,
     ThankPageComponent,
     FooterComponent,
-    CountsComponent
+    CountsComponent,
+    PricesComponent,
+    MenuComponent
   ],
   entryComponents: [
     SuscriberComponent,
@@ -23,7 +27,9 @@ import { CountsComponent } from './counts/counts.component';
     SuscriberComponent,
     ThankPageComponent,
     FooterComponent,
-    CountsComponent
+    CountsComponent,
+    PricesComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,

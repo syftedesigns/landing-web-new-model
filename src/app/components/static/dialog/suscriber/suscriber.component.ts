@@ -12,7 +12,7 @@ declare function LeadContact();
 @Component({
   selector: 'app-suscriber',
   templateUrl: './suscriber.component.html',
-  styles: []
+  styleUrls: ['./suscriber.component.css']
 })
 export class SuscriberComponent implements OnInit {
   isLoading: boolean = false;

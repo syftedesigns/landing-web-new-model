@@ -8,6 +8,7 @@ import { StaticModule } from './components/static/static.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { ServicesModule } from './services/services.module';
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ServicesModule } from './services/services.module';
     StaticModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    ServicesModule
+    ServicesModule,
+    NgwWowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

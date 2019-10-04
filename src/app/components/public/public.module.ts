@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { PagesRoutingModule } from './public.routes';
 import { StaticModule } from '../static/static.module';
 import { AngularMaterialModule } from '../../angular-material.module';
-
+import { ParticlesModule } from 'angular-particle';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { AngularMaterialModule } from '../../angular-material.module';
     RouterModule,
     PagesRoutingModule,
     StaticModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    ParticlesModule
   ]
 })
 export class PublicModule { }

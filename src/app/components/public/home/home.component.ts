@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { SuscriberComponent } from '../../static/dialog/suscriber/suscriber.component';
 import { ThankPageComponent } from '../../static/dialog/thank-page/thank-page.component';
+import { ParticleStyle, ParticleConfigMobile, ParticleConfigDesktop } from 'src/app/settings/particles.config';
 // Facebook.js script file with Fb Track functions
 declare function ViewContent();
 declare function WhatsAppContact();
@@ -12,6 +13,9 @@ declare function WhatsAppContact();
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  Device: any;
+  public ParticleStyle: object = {};
+  public particles: object | any = {};
   IsPageTracked: boolean = false; // La pagina por defecto no ha sido trackeada, es decir el cliente no ha leido
   BtnWsTriggered: boolean = false; // El cliente no ha pulsado click en ningún boton de whats app
   /*
@@ -36,6 +40,13 @@ export class HomeComponent implements OnInit {
   constructor(public dialog: MatDialog, private DOM: ElementRef) { }
 
   ngOnInit() {
+    if (window.innerWidth <= 480) {
+      this.ParticleStyle = ParticleStyle;
+      this.particles = ParticleConfigMobile;
+    } else {
+      this.ParticleStyle = ParticleStyle;
+      this.particles = ParticleConfigDesktop;
+    }
   }
 
   SuscriberDialog(): void {
